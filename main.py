@@ -14,6 +14,7 @@ def send(msg):
         response.raise_for_status()
     except Exception as e:
         print(f"Error sending message: {e}")
+send("sending")
 
 # Download data
 data = yf.download("SPY", period="10d", interval="1d")
