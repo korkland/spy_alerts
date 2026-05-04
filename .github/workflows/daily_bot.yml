@@ -3,7 +3,7 @@ name: Daily SPY Alert
 on:
   schedule:
     # Runs at 23:01 Israel Time
-    - cron: '0 15 * * *'
+    - cron: '*/15 * * * *'
       # timezone: 'Asia/Jerusalem'
   workflow_dispatch: # Allows you to run it manually for testing
 
